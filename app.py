@@ -86,8 +86,11 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     if response == None:
-                        response = "Eeverthing is for you fahim."
-                        bot.send_text_message(sender_id, response)
+                        response = [
+                            "title": "Hello",
+                            "image_url": "https://photos.app.goo.gl/uU5us47gKp8vvS4t9"
+                        ]
+                        bot.send_generic_message(sender_id, response)
 
     return "ok", 200
 
