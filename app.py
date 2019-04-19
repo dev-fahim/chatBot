@@ -82,7 +82,17 @@ def webhook():
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'thanks':
-                        response = " thank you too."
+                        response = [
+                            {
+                                "buttons":[
+                                      {
+                                        "type":"web_url",
+                                        "url":"https://www.messenger.com",
+                                        "title":"Visit Messenger"
+                                    },
+                                ]
+                            }
+                        ]
                         bot.send_text_message(sender_id, response)
 
                     if response == None:
