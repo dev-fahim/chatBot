@@ -87,8 +87,10 @@ def webhook():
 
                     if response == None:
                         response = [
-                            "title": "Hello",
-                            "image_url": "https://photos.app.goo.gl/uU5us47gKp8vvS4t9"
+                            {
+                                "title": "Hello",
+                                "image_url": "https://photos.app.goo.gl/uU5us47gKp8vvS4t9"
+                            },
                         ]
                         bot.send_generic_message(sender_id, response)
 
