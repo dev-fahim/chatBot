@@ -89,7 +89,7 @@ def webhook():
                         response = [
                             {
                                 "title": "Hello",
-                                "image_url": "https://photos.app.goo.gl/uU5us47gKp8vvS4t9"
+                                "image_url": "https://images.pexels.com/photos/1893609/pexels-photo-1893609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                             },
                         ]
                         bot.send_generic_message(sender_id, response)
