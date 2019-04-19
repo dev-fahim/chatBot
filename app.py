@@ -56,16 +56,12 @@ def webhook():
                     if entity == 'greetings':
                         response = [
                             {
-                                "buttons":[
-                                      {
-                                        "type":"web_url",
-                                        "url":"https://www.wit.ai",
-                                        "title":"Greetings"
-                                    },
-                                ]
+                                "type":"web_url",
+                                "url":"https://www.messenger.com",
+                                "title":"Visit Messenger"
                             }
                         ]
-                        bot.send_generic_message(sender_id, response)
+                        bot.send_button_message(sender_id, "Hello", response)
 
                     elif entity == 'Ad_sense_income':
                         response = " Do you want to know how to start income using Adsense?"
@@ -94,16 +90,12 @@ def webhook():
                     elif entity == 'thanks':
                         response = [
                             {
-                                "buttons":[
-                                      {
-                                        "type":"web_url",
-                                        "url":"https://www.messenger.com",
-                                        "title":"Visit Messenger"
-                                    },
-                                ]
+                                "type":"web_url",
+                                "url":"https://www.messenger.com",
+                                "title":"Visit Messenger"
                             }
                         ]
-                        bot.send_generic_message(sender_id, response)
+                        bot.send_button_message(sender_id, "Hello", response)
 
                     if response == None:
                         response = [
