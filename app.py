@@ -54,7 +54,17 @@ def webhook():
                     entity, value = wit_response(messaging_text)
 
                     if entity == 'greetings':
-                        response = " hi, How Can I help you. "
+                        response = [
+                            {
+                                "buttons":[
+                                      {
+                                        "type":"web_url",
+                                        "url":"https://www.wit.ai",
+                                        "title":"Greetings"
+                                    },
+                                ]
+                            }
+                        ]
                         bot.send_text_message(sender_id, response)
 
                     elif entity == 'Ad_sense_income':
