@@ -65,7 +65,7 @@ def webhook():
                                 ]
                             }
                         ]
-                        bot.send_text_message(sender_id, response)
+                        bot.send_generic_message(sender_id, response)
 
                     elif entity == 'Ad_sense_income':
                         response = " Do you want to know how to start income using Adsense?"
@@ -103,7 +103,7 @@ def webhook():
                                 ]
                             }
                         ]
-                        bot.send_text_message(sender_id, response)
+                        bot.send_generic_message(sender_id, response)
 
                     if response == None:
                         response = [
