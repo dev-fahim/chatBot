@@ -54,6 +54,7 @@ def webhook():
                     entity, value = wit_response(messaging_text)
 
                     if entity == 'greetings':
+
                         response = {
                             "attachment": {
                                 "type": "template",
